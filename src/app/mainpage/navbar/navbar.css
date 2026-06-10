@@ -41,8 +41,9 @@
 .navbar img:hover {
     border-radius: 50px;
     opacity: 0.85;
-    transform: scale(1.8);
-    box-shadow: 0 4px 15px rgb(252, 248, 10);
+    transform: scale(1.6);
+    box-shadow: 0 4px 15px rgb(248, 214, 18);
+    
 
 
 }
@@ -178,7 +179,7 @@
 }
 
 .brandlogo:hover .drithi-brand {
-    transform: scale(1.05);
+    transform: scale(1.2);
     filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
 }
 
@@ -209,6 +210,7 @@
 .brandlogo:hover .top-text,
 .brandlogo:hover .brand-bottom {
     color: #1f140a;
+    font-size: 8px;
     transition: color 0.4s ease;
 }
 
@@ -269,6 +271,7 @@
     .header {
         margin: 0px;
         padding: 0px;
+        height: 80px;
     }
     
     .navbar {
@@ -283,7 +286,8 @@
 
     .brandlogo {
         display: flex;
-        margin-left: 10px;
+        align-items: center;
+       
     }
 
     .navbar-nav {
@@ -321,7 +325,7 @@
     }
 
     .header {
-        height: 70px;
+        height: 80px;
 }
 
     .navbar-toggler {
@@ -343,6 +347,7 @@
         box-sizing: border-box;
         height: 50px;
         width: 100%;
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;       
         align-items: center;
@@ -355,8 +360,6 @@
         box-shadow:
             0 8px 32px rgba(0, 0, 0, 0.1),
             inset 0 1px 0 rgba(255, 255, 255, 0.2);
-
-       
     }
 
     
@@ -367,8 +370,9 @@
     }
 
     .nav-item {
-        margin: 10px;
+        margin: 15px;
         flex-direction: row;
+
        
     }
 

@@ -10,6 +10,6 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class Navbar {
   get logo () {
-    return 'assets/logo.jpg'
+    return 'assets/logo.png'
   }
 }
