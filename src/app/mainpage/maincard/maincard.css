@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+}
+
+
+.home-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    box-sizing: content-box;
+    padding: 60px 5%;
+    border-bottom: 1px solid rgb(216, 112, 112);
+    margin: 0;
+    
+}
+
+
+.content {
+    height: 100%;
+    flex: 1;
+    width: 350px;
+    animation: headingZoom 1s ease-in-out forwards;
+}
+
+@keyframes headingZoom {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.home-heading {
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ee760c;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+    animation: headingZoom 1s ease-in-out forwards;
+}
+.home-heading span{
+    
+    margin-left: 10px;
+}
+
+@keyframes headingZoom {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.home-description {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #f8ce43;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+.explore-btn {
+    padding: 14px 35px;
+    border: none;
+    border-radius: 30px;
+    background: #c9a86a;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(201, 168, 106, 0.3);
+}
+
+.image-container {
+    height: fit-content;
+    width: fit-content;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    height: fit-content;
+    width: fit-content;
+    
+    border-radius: 500px;
+    box-shadow: 0 50px 50px rgba(252, 217, 19, 0.15);
+    object-fit: cover;
+    animation: slowZoom 1s ease-in-out backwards;
+}
+
+
+
+@keyframes slowZoom {
+    from {
+        transform: scale(1.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .home-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+        box-sizing: content-box;
+        padding: 60px 5%;
+        border-bottom: 1px solid rgb(216, 112, 112);
+        margin: 0;
+
+    }
+
+    .content {
+        width: 100%;
+    }
+}

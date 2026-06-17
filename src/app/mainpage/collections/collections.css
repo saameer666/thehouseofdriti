@@ -1,0 +1,56 @@
+ body {
+     background-color: #f8f9fa;
+ }
+
+ .collection-section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 15px;
+ }
+
+ .title {
+     color: rgb(70, 70, 68);
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 42px;
+     letter-spacing: 2px;
+     font-weight: 400;
+
+ }
+
+ .caption {
+     color: black;
+     font-weight: 400;
+     font-size: 18px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+
+
+
+ .card {
+     border: none;
+     border-radius: 12px;
+     overflow: hidden;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     transition: transform 0.3s ease;
+ }
+
+ .card:hover {
+     transform: translateY(-10px);
+ }
+
+ .card img {
+     height: 220px;
+     object-fit: cover;
+     width: 100%;
+ }
+
+ .card-title {
+     font-weight: 600;
+ }
+
+ .card-text {
+     color: #6c757d;
+     font-size: 15px;
+ }
