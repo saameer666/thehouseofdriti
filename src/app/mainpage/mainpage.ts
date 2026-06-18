@@ -5,6 +5,7 @@ import { Collections } from './collections/collections';
 
 
 
+
 @Component({
   selector: 'app-mainpage',
   standalone:true,
