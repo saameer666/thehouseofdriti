@@ -29,6 +29,7 @@
     position: relative;
     min-height: 100vh;
     width: 100%;
+    
 }
 
 /* Single, unified pseudo-element for the background layer */
@@ -38,18 +39,18 @@
     inset: 0;        /* Shorthand for top:0, left:0, right:0, bottom:0 */
     
     /* Base color fallback + your background image */
-    background: rgb(252, 241, 228) url('/assets/background.jpg') center/cover no-repeat;
+    background: rgb(252, 241, 228) url('/assets/background.png') center/cover no-repeat;
     
-    opacity: 0.5;    /* Keeps the image subtle */
+    opacity: 0.7;    /* Keeps the image subtle */
     z-index: -1;     /* Pushes it behind all Angular components */
     
     /* Re-enabled and smoothed out your animation */
-    animation: scale-up-center-normal 20s cubic-bezier(0.190, 1.000, 0.220, 1.000) infinite alternate;
+    animation: scale-up-center-normal 6s cubic-bezier(0.190, 1.000, 0.220, 1.000) infinite alternate;
 }
 
 @keyframes scale-up-center-normal {
     from {
-        transform: scale(1.1); /* 1.5 was too zoomed in, 1.1 provides a subtle drift */
+        transform: scale(2); /* 1.5 was too zoomed in, 1.1 provides a subtle drift */
     }
     to {
         transform: scale(1);

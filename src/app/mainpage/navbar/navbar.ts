@@ -1,14 +1,21 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import { MatDivider } from "@angular/material/divider";
+import { RouterLink } from "@angular/router";
+
 
 @Component({
   selector: 'app-navbar',
   standalone:true,
-  imports: [],
+  imports: [MatDivider, RouterLink],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
 export class Navbar {
-    get logo () {
-    return 'assets/logo.png'
+   @Input() collectionsTarget!: HTMLElement;
+
+  scrollToCollections() {
+    if (this.collectionsTarget) {
+      this.collectionsTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

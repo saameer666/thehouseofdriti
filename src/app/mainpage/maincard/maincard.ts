@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { MatDivider } from "@angular/material/divider";
 
 @Component({
   selector: 'app-maincard',
   standalone:true,
-  imports: [],
+  imports: [MatDivider],
   templateUrl: './maincard.html',
   styleUrl: './maincard.css',
 })

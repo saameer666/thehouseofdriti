@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { Homepagelogin } from './homepagelogin/homepagelogin';
 import { Mainpage } from './mainpage/mainpage';
+import { Collections } from './mainpage/collections/collections';
 
 
 
@@ -11,6 +12,12 @@ export const routes: Routes = [
     },
     {
         path: 'mainpage',
-        component: Mainpage
-    }
+        component: Mainpage,
+    children: [
+            {
+                path: 'collections',
+                component: Collections
+            }
+        ]
+    },
 ];
