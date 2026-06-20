@@ -24,33 +24,16 @@
     align-items: center;
     justify-content: space-between;
     /* background-color: rgb(250, 248, 238); */
-    
+
     border-radius: 10px;
 }
 
-
-
-
-
-.navbar img {
-    height: 50px;
-    width: 50px;
-    object-fit: contain;
-    cursor: pointer;
-    border-radius: 80px;
-    margin-left: 25px;
-    background: transparent;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.navbar img:hover {
-    border-radius: 50px;
-    opacity: 0.85;
-    transform: scale(1.6);
-    box-shadow: 0 4px 15px rgb(248, 214, 18);
-
-
-
+.left-menu,
+.nav-menu {
+    margin-top: 1%;
+    align-items: center;
+    display: flex;
+    list-style: none;
 }
 
 
@@ -61,11 +44,12 @@
 
 
 .brandlogo {
-    width: 150px;
+    width: 70%;
     margin: 40px;
     align-items: center;
     display: flex;
     justify-content: center;
+    
 }
 
 
@@ -227,19 +211,17 @@
 
 
 /* Navigation Menu */
-.navbar-nav {
-    gap: 25px;
-    width: 80%;
+#navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
     list-style: none;
-    margin: 25px;
-    padding: 0;
-    text-decoration: none;
 }
+
 
 /* Navigation Items */
 .nav-item {
-    display: flex;
-    align-items: center;
+    margin: 15px;
 }
 
 /* Navigation Links */
@@ -256,9 +238,10 @@
     color: #C9A227;
 }
 
-.nav-link i:hover {
-    
-    transform: scale(1.8);
+.nav-link i:hover,
+.nav-link:hover {
+
+    transform: scale(1.2);
     color: #C9A227;
     text-shadow: 0 0 10px rgba(201, 162, 39, 0.6);
 }
@@ -277,114 +260,102 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .header {
-        margin: 0px;
-        padding: 0px;
+    .header{
         height: 80px;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        transition: none;
-
-    }
-
-    .brandlogo {
-        display: flex;
-        align-items: center;
-
-    }
-
-    .navbar-nav {
-        display: none;
-        
-
-    }
-
-    .navbar img {
-        height: 50px;
-        margin-right: 50px;
-
-    }
-
-    .brandlogo {
         margin: 0;
+        width: 100%;
     }
-
-    .navbar-toggler {
+    .navbar{
+        height: 100%;
+        
+        padding: 0;
+    }
+    .left-menu{
+        display: flex;
+    }
+    .navbar-toggler{
         display: none;
     }
-
-}
-
-@media (max-width: 724px) {
-    .navbar {
-        height: 100%;
-        align-items: center;
-        width: 100;
+    .right-menu{
         display: flex;
-        justify-content: space-between;
-        padding: 5px;
+        flex-direction: row;
+        width: auto;
+    }
+    .navbar-nav{
+        display: none;
+        flex-direction: row;
     }
 
-    .header {
+
+    .brandlogo{
+        margin: 0%;
+        display: flex;
+        justify-content: end;
+        
+    }
+}
+
+@media (max-width: 724px){
+    .header{
         height: 80px;
-    }
-
-    .navbar-toggler {
-        display: flex;
-    }
-
-    .navbar-collapse {
-        position: absolute;
-        top: 50px;
-        left: 0;
         width: 100%;
+        margin: 0;
         padding: 0;
-        margin-left: 0;
-        z-index: 1000;
     }
-
-    .navbar-nav {
-        margin: auto;
-        box-sizing: border-box;
-        height: 50px;
+    .navbar{
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .left-menu{
+        display: none;
+    }
+    .navbar-toggler{
+        display: flex;
+        justify-content: flex-end;
         align-items: center;
-        margin-top: 25px;
-        background: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border-top: 2px solid rgb(255, 1, 1);
-        border-radius: 12px;
-        box-shadow:
-            0 8px 32px rgba(0, 0, 0, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        border: none;
+        box-shadow: none;
     }
-
-
-
-    .navbar img {
-        height: 50px;
-
+    .brandlogo{
+        margin: 2.5%;
+        display: flex;
+        justify-content: start;
     }
-
-    .nav-item {
-        width: 0;
-        margin: auto;
+    #navbarnav{
+        width: 100%;
+    }
+    .navbar-nav{
+        height: 60px;
+        display: flex;
+        align-items: center;
         flex-direction: row;
         justify-content: space-between;
-
-
+        margin: 0;
+        border-bottom: 2px solid gray;
+        
+        border-radius: 20px;
+        
     }
-
-
-
-
+    
+    .navbar-collapse.show {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 0.5%;
+        
+        
+    }
+    .collapse{
+        display: none;
+        transition: 0;
+    }
+    .collapsing{
+        transition:none !important;
+        height:auto !important;
+    }
+    
 }
+   

@@ -10,6 +10,6 @@ import { MatDivider } from "@angular/material/divider";
 })
 export class Maincard {
   get imagepath (){
-    return 'assets/logo.png';
+    return 'assets/jewel2.avif';
   }
 }
