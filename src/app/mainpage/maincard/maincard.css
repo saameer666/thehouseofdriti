@@ -123,8 +123,7 @@ body {
 }
 
 .holographic-card  img{
-    
-    
+    margin-left:8%;
     height: 600px;
     width: 600px;
     border-radius: 200px;
