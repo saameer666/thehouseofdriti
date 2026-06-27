@@ -57,23 +57,25 @@
 </div> -->
 
 
-<header class="header">
-    <nav class="navbar navbar-expand-lg">
-        <div class="left-menu">
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="?" class="nav-link"><i class="fa-regular fa-house" style="font-size: 24px;"></i></a>
-                </li>
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
 
-                <li class="nav-item">
-                    <a routerLink="/mainpage" fragment="collections-section" class="nav-link">
-                        Collections
-                    </a>
-                </li>
+        <!-- LEFT MENU -->
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
 
-            </ul>
-        </div>
+            <li class="nav-item">
+                <a routerLink="/mainpage" fragment="collections-section" class="nav-link">
+                    Collections
+                </a>
+            </li>
+        </ul>
 
+        <!-- CENTER LOGO -->
         <div class="brandlogo">
             <a class="drithi-brand">
 
@@ -104,27 +106,35 @@
                 </div>
             </a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav  w-100">
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact"><i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about"><i class="fa-brands fa-facebook" style="font-size: 30px;"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact"><i class="fa-brands fa-whatsapp"
-                            style="font-size: 30px;"></i></a>
-                </li>
-            </ul>
 
+        <!-- RIGHT SIDE -->
+        <div class="right-section">
+            <!-- TOGGLER (mobile only) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- RIGHT MENU -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact"><i class="fa-brands fa-instagram"
+                                style="font-size: 30px;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about"><i class="fa-brands fa-facebook" style="font-size: 30px;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact"><i class="fa-brands fa-whatsapp"
+                                style="font-size: 30px;"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav>
-</header>
+
+    </div>
+</nav>
 <mat-divider></mat-divider>

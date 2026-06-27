@@ -1,0 +1,84 @@
+.card-content{
+    padding:50px;
+    text-align:center;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 2%;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.collection-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+    margin:40px;
+}
+
+.right-column{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.image-card{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+.image-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
+}
+
+.large-card{
+    height:725px;
+    width: 100%;
+}
+
+.right-column .image-card{
+    height:350px;
+    width: 100%;
+}
+
+.image-card:hover img{
+    transform:scale(1.05);
+}
+
+.image-content{
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    color:#fff;
+    text-align:right;
+    z-index:2;
+}
+
+.image-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.05)
+    );
+    z-index:1;
+}
+
+.image-content{
+    z-index:2;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+}
