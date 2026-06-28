@@ -5,15 +5,25 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/saameer666/thehouseofdriti.git'
+                git 'https://github.com/saameer666/thehouseofdriti.git'
             }
         }
 
-        stage('Deploy to S3') {
+        stage('Install') {
             steps {
-                sh """
-                aws s3 sync dist/ s3://houseofdhrithi --delete
-                """
+                sh 'npm install --legacy-peer-deps --no-audit --no-fund'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'NODE_OPTIONS=--max_old_space_size=1024 npm run build'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh 'aws s3 sync dist/ s3://houseofdhrithi --delete'
             }
         }
     }
