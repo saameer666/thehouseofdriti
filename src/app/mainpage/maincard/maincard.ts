@@ -9,7 +9,5 @@ import { MatDivider } from "@angular/material/divider";
   styleUrl: './maincard.css',
 })
 export class Maincard {
-  get imagepath (){
-    return 'assets/jewel2.avif';
-  }
+ 
 }

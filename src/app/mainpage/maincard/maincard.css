@@ -7,23 +7,21 @@
     box-sizing: border-box;
 }
 
-.announcement-bar {
-  background: #2f1b14;
-  color: #f8e7c8;
-  text-align: center;
-  padding: 12px 20px;
-  font-size: 15px;
-  letter-spacing: 0.5px;
-}
-/* .marquee {
+.marquee {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
 }
 
 .marquee-content {
+     background: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    position: relative;
+    /* Border & shadow */
+    border-radius: 12px;
     font-family: "Dancing Script", cursive ;
-    color: #493112;
+    color: #3b2201;
     font-weight: 600;
     font-size: 3rem;
     display: inline-block;
@@ -39,7 +37,7 @@
     to {
         transform: translateX(-100%);
     }
-} */
+}
 
 /* HERO SECTION */
 .hero-section {
