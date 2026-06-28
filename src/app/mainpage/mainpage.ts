@@ -2,12 +2,14 @@ import { Component, OnInit,ChangeDetectorRef } from '@angular/core';
 import { Navbar } from './navbar/navbar';
 import { Maincard } from './maincard/maincard';
 import { Collections } from './collections/collections';
-import { Imagegallery } from "./collections/imagegallery/imagegallery";
+import { Imagegallery } from "./imagegallery/imagegallery";
+import { Carousel } from "./carousel/carousel";
+import { Occasioncard } from "./occasioncard/occasioncard";
 
 @Component({
   selector: 'app-mainpage',
   standalone: true,
-  imports: [Navbar, Maincard, Collections, Imagegallery],
+  imports: [Navbar, Maincard, Collections, Imagegallery, Carousel, Occasioncard],
   templateUrl: './mainpage.html',
   styleUrls: ['./mainpage.css']   // <-- use styleUrls here
 })

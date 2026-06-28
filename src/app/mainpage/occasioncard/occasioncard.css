@@ -1,0 +1,19 @@
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 2%;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.image-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+img{
+   border-radius:20px;
+}
