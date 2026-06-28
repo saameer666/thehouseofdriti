@@ -5,7 +5,7 @@ pipeline {
  
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'YOUR_GITHUB_REPO_URL'
+                git branch: 'main', url: 'https://github.com/saameer666/thehouseofdriti.git'
             }
         }
  
@@ -24,7 +24,7 @@ pipeline {
         stage('Deploy to S3') {
             steps {
                 sh '''
-                aws s3 sync dist/ s3://YOUR_BUCKET_NAME --delete
+                aws s3 sync dist/ s3://houseofdhrithi --delete
                 '''
             }
         }
