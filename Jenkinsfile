@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/saameer666/thehouseofdriti.git'
-            }
-        }
-
         stage('Install') {
             steps {
                 sh 'npm install --legacy-peer-deps --no-audit --no-fund'
@@ -23,7 +17,9 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'aws s3 sync dist/ s3://houseofdhrithi --delete'
+                sh '''
+                aws s3 sync dist/ s3://houseofdhrithi --delete
+                '''
             }
         }
     }
