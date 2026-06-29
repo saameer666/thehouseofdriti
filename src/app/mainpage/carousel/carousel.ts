@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+
 
 @Component({
+  standalone: true,
   selector: 'app-carousel',
-  imports: [],
+  imports: [CommonModule,],
   templateUrl: './carousel.html',
-  styleUrl: './carousel.css',
+  styleUrl: './carousel.css'
 })
-export class Carousel {
-  
+export class CarouselComponent {
+ 
 }

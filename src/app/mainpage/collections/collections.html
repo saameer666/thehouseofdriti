@@ -6,7 +6,11 @@
 
 <div class="container py-5">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
-
+    
+    @for(collection of collection();track collection.id){
+      <app-collection-card [collection]="collection"/>
+    }
+<!-- 
     <div class="col">
       <div class="card h-100">
         <img src="assets/rings.jpg" class="card-img-top img-fluid" alt="Ring collection">
@@ -72,7 +76,7 @@
           <p class="card-text">A subtle drop of shimmer that frames your face. Elegance in every single movement.</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </div>
