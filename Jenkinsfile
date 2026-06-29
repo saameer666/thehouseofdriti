@@ -1,22 +1,23 @@
 pipeline {
     agent any
- 
+
     stages {
- 
-        stage('Checkout') {
+
+        stage('Install Dependencies') {
             steps {
-                git branch: 'main', url: 'https://github.com/saameer666/thehouseofdriti.git'
+                sh 'npm install'
             }
         }
- 
+
+        stage('Build Angular App') {
+            steps {
+                sh 'npm run build -- --configuration production'
+            }
+        }
+
         stage('Deploy to S3') {
             steps {
-                sh '''
-                aws s3 sync . s3://houseofdhrithi \
-                --exclude "*" \
-                --include "dist/**" \
-                --delete
-                '''
+                sh 'aws s3 sync dist/ s3://houseofdhrithi --delete'
             }
         }
     }
