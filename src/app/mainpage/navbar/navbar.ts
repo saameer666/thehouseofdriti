@@ -18,4 +18,18 @@ export class Navbar {
       this.collectionsTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+  openInstagram(){
+    window.open(
+      'https://www.instagram.com/thehouseof_dhriti?igsh=Y29pNnVmZGNsZWV0',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  }
+  openWhatsApp(){
+    window.open(
+      'https://api.whatsapp.com/send/?phone=%2B918897408084&text&type=phone_number&app_absent=0',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  }
 }
